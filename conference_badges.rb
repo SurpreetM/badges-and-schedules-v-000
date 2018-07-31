@@ -21,13 +21,13 @@ def assign_rooms (speakers)
   rooms_array
 end
 
-def printer (names, speakers)
+def printer (names)
 
   batch_badge_creator (names).each do |badge|
     puts badge
   end
 
-  assign_rooms (speakers).each do |room_assigned|
+  assign_rooms (names).each do |room_assigned|
     puts room_assigned
-  end 
+  end
 end
